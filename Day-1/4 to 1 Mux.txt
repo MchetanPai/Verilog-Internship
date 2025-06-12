@@ -1,0 +1,16 @@
+module 4_to_1mux (OUT,I0,I1,I2,I3,S1,S0);
+
+	output OUT;
+	input I0,I1,I2,I3;
+	input S1,S0;
+	wire S1n,S0n;
+	wire Y0,Y1,Y2,Y3;
+	not (S1n, S1);
+	not (S0n, S0);
+	and (Y0, I0, S1n, S0n);
+	and (Y1, I1, S1n, S0);
+	and (Y2, I2, S1, S0n);
+	and (Y3, I3, S1, S0);
+	or (OUT,Y0,Y1,Y2,Y3);
+endmodule
+	
