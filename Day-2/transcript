@@ -1,0 +1,9 @@
+# Compile of Hello_World.v was successful.
+vsim -gui work.hello
+# vsim -gui work.hello 
+# Start time: 13:40:42 on Jun 11,2025
+# Loading work.hello
+run -all
+# Hello
+# End time: 13:41:05 on Jun 11,2025, Elapsed time: 0:00:23
+# Errors: 0, Warnings: 5
